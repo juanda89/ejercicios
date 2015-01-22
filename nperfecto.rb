@@ -1,12 +1,15 @@
-puts "Número perfecto?"
-numero = gets.chomp.to_i
+
+
+for i in 1..100000
+
+#puts "Número perfecto?"
+numero = i
 rango = 1...numero
 suma =0
 #comentario
 rango.each do |x|
 if numero% x ==0 
 suma +=x
-puts x
 else
 	
 end
@@ -14,5 +17,6 @@ end
 if numero == suma
 	puts "#{numero} es un número perfecto"
 else
-	puts "#{numero} no es un número perfecto"
+	
+end
 end
